@@ -1,0 +1,91 @@
+.header
+    background-image: url('../../images/desktop/image-hero-left.png'), url('../../images/desktop/image-hero-right.png')
+    background-repeat: no-repeat
+    background-position: -26px top, right 52px
+    background-size: cover contain
+    padding-top: 23px
+    overflow: hidden
+    margin-bottom: 16px
+    &__img
+        display: none
+        width: 106%
+        margin-bottom: 72px
+        margin-left: -3.6rem
+    &__main
+        position: relative
+        max-width: 412.3px
+        text-align: center
+        margin: 0 auto 109px
+        padding: 24px
+    &__layer
+        display: none
+        position: absolute
+        border-radius: 8px
+        padding: 24px
+        background: $white
+        opacity: .8
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+    &__frame
+        position: relative
+    &__heading
+        margin-bottom: $S400
+    &__text
+        color: $slate-600 !important
+        margin-bottom: $S400
+    &__buttons
+        display: flex
+        margin: auto
+        width: 371px
+        justify-content: space-between
+
+//Media quieries
+@media only screen and (max-width: 1232px)
+    .header
+        &__main
+            border-radius: 8px
+            border: .5px $slate-600 solid
+        &__layer
+            display: block
+
+//@media only screen and (max-width: 970px)
+
+@media only screen and (max-width: 815px)
+    .header
+        background-image: none
+        padding-top: 0
+        &__img
+            display: block
+        &__main
+            margin-bottom: $S800
+            border: none
+        &__layer
+            display: none
+
+@media only screen and (max-width: 766px)
+    .header
+        &__img
+            margin-bottom: 42px
+        &__buttons
+            flex-direction: column
+            align-items: center
+            &-item
+                margin-bottom: 16px
+
+@media only screen and (max-width: 375px)
+    .header
+        margin-bottom: 30px
+        &__main
+            margin-bottom: $S400
+            max-width: 30.2rem
+        &__heading
+            max-width: 290px
+            margin: auto
+            //margin-bottom: auto
+            margin-bottom: 32px
+        &__text
+            max-width: 290px
+        &__buttons
+            width: 100%

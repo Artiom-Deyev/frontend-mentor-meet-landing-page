@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+*.code-workspace
+
+# Node
+node_modules/
+npm-debug.log
+
+# Figma (optional, only if you don't want to track)
+*.fig

@@ -1,0 +1,83 @@
+@font-face
+    font-family: 'Red Hat Display'
+    src: url('/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf')
+    font-weight: 300 900
+
+.heading
+    //font-family: 'Red Hat Display Black', sans-serif
+    font-family: 'Red Hat Display', sans-serif
+    font-weight: 900
+    font-size: 64px
+    line-height: 64px
+    letter-spacing: 0
+    color: $slate-900
+    &__medium
+        font-size: 4rem
+        line-height: 110%
+        letter-spacing: 0px
+        &_tablet
+            font-size: 3.6rem
+
+    &_small-bold
+        font-weight: 700
+        font-size: 2.4rem
+        line-height: 136%
+        letter-spacing: 4.8px
+    &_small-regular
+        font-weight: 500
+        font-size: 2.4rem
+        line-height: 136%
+        letter-spacing: 4.8px
+
+.text
+    font-family: 'Red Hat Display', sans-serif
+    font-weight: 900
+    color: $slate-900
+    &_black
+        font-size: 6.4rem
+        line-height: 110%
+        letter-spacing: 0
+    &_black-small
+        font-size: 4rem
+        line-height: 110%
+        letter-spacing: 0
+    &_black-caption
+        font-size: 1.6rem
+        line-height: 110%
+        letter-spacing: 4px
+        color: $cyan-600
+    &_medium
+        font-weight: 300
+        font-size: 1.8rem
+        line-height: 110%
+        letter-spacing: 0
+    &_small
+        font-weight: 700
+        font-size: 1.6rem
+        line-height: 150%
+        letter-spacing: 0
+
+//Media Quieries
+@media only screen and (max-width: 375px)
+    .heading
+        font-size: 4rem
+        line-height: 110%
+        letter-spacing: 0
+        &__medium
+            font-size: 3.6rem
+
+    .text
+        &_small
+            font-size: 1.6rem
+
+@media only screen and (max-width: 375px)
+    .heading
+        font-size: 4rem
+        line-height: 110%
+        letter-spacing: 0
+        &__medium
+            font-size: 3.2rem
+
+    .text
+        &_small
+            font-size: 1.2rem

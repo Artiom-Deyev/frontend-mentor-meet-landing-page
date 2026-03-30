@@ -1,0 +1,61 @@
+.footer
+    position: relative
+    padding: $S1400 0
+    &__background
+        position: absolute
+        top: 0
+        left: 0
+        background-image: url('/images/desktop/image-footer.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        width: 100%
+        height: 100%
+        z-index: -2
+    &__layer
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        background: $cyan-600
+        height: 100%
+        width: 100%
+        opacity: .8
+    &__number
+        position: absolute !important
+        top: -109px
+        right: 48.5%
+    &__container
+        display: flex
+        justify-content: space-between
+        margin: auto
+        margin-bottom: 24px
+        max-width: 112rem
+    &__heading
+        color: $white
+        max-width: 445px
+    &__text
+        color: $white
+        max-width: 350px
+        margin-right: 24px
+
+    //Media queries
+    @media only screen and (max-width: 1052px)
+        .footer
+            &__background
+                background-image: url('/images/tablet/image-footer.jpg')
+            &__container
+                flex-direction: column
+                align-items: center
+            &__heading
+                text-align: center
+                max-width: 504px
+                margin-bottom: $S300
+            &__text
+                text-align: center
+                max-width: 504px
+                margin-bottom: $S300
+
+    @media only screen and (max-width: 552px)
+        .footer
+            &__background
+                background-image: url('/images/mobile/image-footer.jpg')

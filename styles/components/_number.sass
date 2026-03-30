@@ -1,0 +1,26 @@
+.number
+    display: block
+    position: relative
+    margin: auto
+    width: 56px
+    height: 56px
+    padding-top: 40px
+    &__container
+        position: relative
+        // width: 56px
+        // height: 56px
+        box-sizing: border-box
+        padding: 16px 19px
+        border-radius: 50%
+        border: $slate-300 1px solid
+        &_white
+            background: $white
+    &__text
+        color: $slate-600
+    &__stroke
+        position: absolute
+        height: 80px
+        width: 1px
+        background: $slate-300
+        top: -80px
+        right: 26px
