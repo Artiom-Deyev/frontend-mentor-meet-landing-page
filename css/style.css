@@ -124,7 +124,7 @@ body {
   background-image: url("./../images/desktop/image-hero-left.png"), url("./../images/desktop/image-hero-right.png");
   background-repeat: no-repeat;
   background-position: -26px top, right 52px;
-  background-size: conatin contain;
+  background-size: cover contain;
   padding-top: 23px;
   overflow: hidden;
   margin-bottom: 40px;
@@ -326,7 +326,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("/images/desktop/image-footer.jpg");
+  background-image: url("./../images/desktop/image-footer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
